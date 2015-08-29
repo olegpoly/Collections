@@ -1,11 +1,9 @@
 package tree;
 
-import tree.completeBinaryTree.TreePrinter;
-
 /**
  * General interface for all trees
  */
-public interface Tree<T extends ConditionalEquality<T>> {
+public interface Tree<T> {
     void add(T element);
     void remove(T element);
     void print(TreePrinter treePrinter);
